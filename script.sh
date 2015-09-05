@@ -14,6 +14,12 @@ sudo dpkg -i ~/tmp/*.deb
 sudo apt-get -f install -y
 sudo apt-get install -y git emacs vim filezilla 
 
-
 #sudo ./vmware-install.pl -d # -d means accepting defaults
+
+# emacs configuration file
+wget https://raw.githubusercontent.com/liankaohk/ubuntu-configurations/master/emacs_conf.el -O ~/.emacs
+
+# bash aliases
+wget https://raw.githubusercontent.com/liankaohk/ubuntu-configurations/master/aliases.sh -O ~/.bash_aliases
+source ~/.bash_aliases
 
